@@ -35,7 +35,12 @@ class ImportTransactionsService {
     });
 
     await new Promise(resolve => parseCSV.on('end', resolve));
+
+    console.log(categories);
+    console.log(transactions);
   }
 }
 
 export default ImportTransactionsService;
+
+// 1:29
